@@ -10,6 +10,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            /*
+             //EJERCICIO 1
             Console.WriteLine("Ingresar coordenadas");
             
             rectangulo rectangulo_cal = new rectangulo();
@@ -33,6 +35,37 @@ namespace ConsoleApp1
 
             Console.WriteLine("Perimetro: " + perimetro );
             Console.WriteLine("Área: " + area );
+
+            Console.Read();
+            */
+
+            //EJERCICIO 2
+
+            double x1, x2, x3;
+            double y1, y2, y3;
+
+            Console.WriteLine("Ingresar x1");
+            x1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ingresar y1");
+            y1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ingresar x2");
+            x2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ingresar y2");
+            y2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ingresar x3");
+            x3 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ingresar y3");
+            y3 = Convert.ToDouble(Console.ReadLine());
+
+            RectanguloObj rectanguloObj = new RectanguloObj(x1, x2, x3, y1, y2, y3);
+
+            Console.WriteLine("Punto 1: " + rectanguloObj.Punto1());
+
+            Console.WriteLine("Punto 2: " + rectanguloObj.Punto2());
+
+            Console.WriteLine("Perimetro: " + rectanguloObj.Perimetro());
+
+            Console.WriteLine("área: " + rectanguloObj.Area());
 
             Console.Read();
 
