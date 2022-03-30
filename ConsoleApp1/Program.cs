@@ -27,10 +27,12 @@ namespace ConsoleApp1
             Console.WriteLine("Ingresar y3");
             rectangulo_cal.y3 = Convert.ToDouble(Console.ReadLine());
 
+            double perimetro = 2 * (rectangulo_cal.calcularDistancia() + rectangulo_cal.calcularDistancia2());
+            double area = 2 * rectangulo_cal.calcularDistancia() * rectangulo_cal.calcularDistancia2();
 
 
-            Console.WriteLine("Perimetro: " + 2*(rectangulo_cal.calcularDistancia() + rectangulo_cal.calcularDistancia2()) );
-            Console.WriteLine("Área: " + (rectangulo_cal.calcularDistancia() * rectangulo_cal.calcularDistancia2()) );
+            Console.WriteLine("Perimetro: " + perimetro );
+            Console.WriteLine("Área: " + area );
 
             Console.Read();
 
