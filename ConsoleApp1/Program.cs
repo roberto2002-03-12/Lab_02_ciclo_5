@@ -30,7 +30,7 @@ namespace ConsoleApp1
             rectangulo_cal.y3 = Convert.ToDouble(Console.ReadLine());
 
             double perimetro = 2 * (rectangulo_cal.calcularDistancia() + rectangulo_cal.calcularDistancia2());
-            double area = 2 * rectangulo_cal.calcularDistancia() * rectangulo_cal.calcularDistancia2();
+            double area = rectangulo_cal.calcularDistancia() * rectangulo_cal.calcularDistancia2();
 
 
             Console.WriteLine("Perimetro: " + perimetro );
